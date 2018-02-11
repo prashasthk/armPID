@@ -2,12 +2,12 @@
 #define Arm_H
 
 #include <Commands/Subsystem.h>
-#include <ctrlib/CANTalon.h>
+#include "ctre/Phoenix.h"
 #include <Commands/MoveArm.h>
 
 class Arm : public Subsystem {
 private:
-	CANTalon * talonArm;
+	TalonSRX * talonArm;
 	// It's desirable that everything possible under private except
 	// for methods that implement subsystem capabilities
 

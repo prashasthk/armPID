@@ -2,7 +2,6 @@
 #define OI_H
 
 #include <WPILIb.h>
-#include "ctrlib/CANTalon.h"
 
 class OI {
 public:

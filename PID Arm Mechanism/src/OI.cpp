@@ -1,6 +1,7 @@
 #include "OI.h"
 
 #include <WPILib.h>
+#include "ctre/Phoenix.h"
 
 OI::OI()
 :armJoystick(new Joystick(0))

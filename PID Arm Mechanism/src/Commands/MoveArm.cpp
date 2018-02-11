@@ -17,14 +17,14 @@ void MoveArm::Execute() {
 	double p = 0.3;
 	double i = 0.003;
 	double d = 3;
-	double d = 0.003;
+	double f = 0.003;
 	int izone = 300;
 	double ramprate = 48;
 	int profile = 1;
 	armDrive -> SetProfileSlot(profile);
 	armDrive -> SetPID(p, i, d, f);
 	armDrive -> SetIzone(izone);
-	armDrive -> SetCLoseLoopRampRate(ramprate);
+	armDrive -> SetCloseLoopRampRate(ramprate);
 	armDrive -> moveArm(armValue);
 }
 
